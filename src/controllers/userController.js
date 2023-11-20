@@ -4,7 +4,7 @@ let handlelogin = async (req, res) => {
   try {
     let email = req.body.email;
     let password = req.body.password;
-
+    // kiem tra email và password
     if (!email || !password) {
       return res.status(500).json({
         errCode: 1,
